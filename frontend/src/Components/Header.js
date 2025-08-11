@@ -3,9 +3,8 @@ import "./header.css"
 import { NavLink } from "react-router-dom"
 import axios from "axios"
 
-const Headers = () => {
+const Header = () => {
     const [userdata, setUserdata] = useState({});
-    console.log("response", userdata)
 
     const getUser = async () => {
         try {
@@ -17,7 +16,7 @@ const Headers = () => {
         }
     }
 
-    // logoout
+    // logout
     const logout = ()=>{
         window.open("http://localhost:8000/logout","_self")
     }
@@ -30,7 +29,7 @@ const Headers = () => {
             <header>
                 <nav>
                     <div className="left">
-                        <h1>Harsh Pathak</h1>
+                        <h1>Devashish Pal</h1>
                     </div>
                     <div className="right">
                         <ul>
@@ -70,4 +69,4 @@ const Headers = () => {
     )
 }
 
-export default Headers
+export default Header

@@ -1,6 +1,6 @@
 
 import Home from './Components/Home';
-import Headers from './Components/Headers';
+import Header from './Components/Header';
 import Login from './Components/Login';
 import Dashboard from './Components/Dashboard';
 import Error from './Components/Error';
@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom"
 function App() {
   return (
     <>
-      <Headers />
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
